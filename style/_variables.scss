@@ -1,0 +1,28 @@
+
+
+$breakpoints :(
+    "Phone": 360px,
+    "tablet": 728px,
+    "desktop": 1366px,
+    "LGdesktop": 1920px
+) !default;
+
+@mixin h1 {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif; 
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 1.33334em;
+    &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            width: 9%;
+            left: 0;
+            height: 3px;
+            background: #fff; 
+            border: 1px solid #fff;
+    }
+}
+
